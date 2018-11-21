@@ -1,0 +1,2 @@
+# docker_mongodb_high_available_rs
+高可用的mongodb分片集群搭建-对应真实生产环境
