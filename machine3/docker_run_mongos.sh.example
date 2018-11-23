@@ -1,1 +1,1 @@
-docker run --name mongos0 -d -p 27017:27017 --entrypoint "mongos" mongo --configdb rs_configsvr/10.0.0.3 --bind_ip_all
+docker run --name mongos2 -d --network mongodb_ov_net -p 27017:27017 --entrypoint "mongos" mongo --configdb rs_configsvr/10.0.1.4 --bind_ip_all
