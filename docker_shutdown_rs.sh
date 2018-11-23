@@ -18,4 +18,9 @@ docker stop shardsvr11
 docker rm shardsvr11
 docker stop shardsvr12
 docker rm shardsvr12
-
+docker stop shardsvr20
+docker rm shardsvr20
+docker stop shardsvr21
+docker rm shardsvr21
+docker stop shardsvr22
+docker rm shardsvr22
