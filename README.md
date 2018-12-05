@@ -1,7 +1,9 @@
-# docker_mongodb_high_available_rs
-高可用的mongodb分片集群搭建-对应真实生产环境
+# 预拷贝
+- 拷贝所有.example结尾的文件到/home/mongodb目录，去掉.example后缀
+
 # 启动步骤：
 ## 分别运行machine1,machine2,machine3, ... 上的docker_run_configsvr.sh,把这3个configsvr初始化到一个副本集
+'''
 rs.initiate(
 {
 _id: "rs_configsvr",
@@ -13,6 +15,7 @@ members: [
 ]
 }
 )
+'''
 
 ## 分别运行machine1,machine2,machine3, ... 上的docker_run_shardsvr.sh，分别把3台机器的shardsvr加入到对应集群
 rs.initiate(
