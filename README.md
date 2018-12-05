@@ -4,7 +4,6 @@
 # 启动步骤：
 ## 分别运行machine1,machine2,machine3, ... 上的docker_run_configsvr.sh,把这3个configsvr初始化到一个副本集
 
-'''go
 rs.initiate(
 {
 _id: "rs_configsvr",
@@ -16,7 +15,6 @@ members: [
 ]
 }
 )
-'''
 
 ## 分别运行machine1,machine2,machine3, ... 上的docker_run_shardsvr.sh，分别把3台机器的shardsvr加入到对应集群
 rs.initiate(
@@ -56,6 +54,7 @@ members: [
 
 ## 分别运行machine1,machine2,machine3, ... 上的docker_run_mongos.sh
 在任意一台上的mongos上执行
+
 sh.addShard("rs_shardsvr0/10.0.1.5:27018,10.0.1.8:27018,10.0.1.11:27018")
 sh.addShard("rs_shardsvr1/10.0.1.6:27018,10.0.1.9:27018,10.0.1.12:27018")
 sh.addShard("rs_shardsvr2/10.0.1.7:27018,10.0.1.10:27018,10.0.1.13:27018")
