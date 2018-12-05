@@ -1,5 +1,7 @@
-# 预拷贝
-- 拷贝所有.example结尾的文件到/home/mongodb目录，去掉.example后缀
+# key生成和预拷贝
+- openssl rand -base64 745 > /home/mongodb/key.file
+- chmod 600 /home/mongodb/key.file
+- 拷贝所有.example结尾的文件到/home/mongodb目录，去掉.example后缀(注：key.file,根据每套集群环境不一样而不同，需要自己重新生成)
 
 # 启动步骤：
 ## 分别运行machine1,machine2,machine3, ... 上的docker_run_configsvr.sh,把这3个configsvr初始化到一个副本集
