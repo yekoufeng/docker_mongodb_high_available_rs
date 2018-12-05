@@ -3,7 +3,7 @@
 
 # 启动步骤：
 ## 分别运行machine1,machine2,machine3, ... 上的docker_run_configsvr.sh,把这3个configsvr初始化到一个副本集
-'''
+'''go
 rs.initiate(
 {
 _id: "rs_configsvr",
