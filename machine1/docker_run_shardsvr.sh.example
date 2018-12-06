@@ -3,8 +3,8 @@
 #docker run --name shardsvr20 -d --network mongodb_ov_net  -v /home/mongodb/data/sh/shardsvr20:/data/db mongo --shardsvr --replSet "rs_shardsvr2"  --bind_ip_all 
 
 
-docker run --name shardsvr00 -d -v /home/mongodb/conf/mongod_shard0.conf:/data/db/mongod.conf -v /home/mongodb/key.file:/data/db/key.file -v /home/mongodb/log/sh/shardsvr00/shards.log:/data/db/log/shards.log -v /home/mongodb/data/sh/shardsvr00:/data/db mongo  --config /data/db/mongod.conf
-docker run --name shardsvr10 -d -v /home/mongodb/conf/mongod_shard1.conf:/data/db/mongod.conf -v /home/mongodb/key.file:/data/db/key.file -v /home/mongodb/log/sh/shardsvr10/shards.log:/data/db/log/shards.log -v /home/mongodb/data/sh/shardsvr10:/data/db mongo  --config /data/db/mongod.conf
-docker run --name shardsvr20 -d -v /home/mongodb/conf/mongod_shard1.conf:/data/db/mongod.conf -v /home/mongodb/key.file:/data/db/key.file -v /home/mongodb/log/sh/shardsvr20/shards.log:/data/db/log/shards.log -v /home/mongodb/data/sh/shardsvr20:/data/db mongo  --config /data/db/mongod.conf
+docker run --name shardsvr00 -d --network mongodb_ov_net -v /home/mongodb/conf/mongod_shard0.conf:/data/db/mongod.conf -v /home/mongodb/key.file:/data/db/key.file -v /home/mongodb/log/sh/shardsvr00/shards.log:/data/db/log/shards.log -v /home/mongodb/data/sh/shardsvr00:/data/db mongo  --config /data/db/mongod.conf
+docker run --name shardsvr10 -d --network mongodb_ov_net -v /home/mongodb/conf/mongod_shard1.conf:/data/db/mongod.conf -v /home/mongodb/key.file:/data/db/key.file -v /home/mongodb/log/sh/shardsvr10/shards.log:/data/db/log/shards.log -v /home/mongodb/data/sh/shardsvr10:/data/db mongo  --config /data/db/mongod.conf
+docker run --name shardsvr20 -d --network mongodb_ov_net -v /home/mongodb/conf/mongod_shard1.conf:/data/db/mongod.conf -v /home/mongodb/key.file:/data/db/key.file -v /home/mongodb/log/sh/shardsvr20/shards.log:/data/db/log/shards.log -v /home/mongodb/data/sh/shardsvr20:/data/db mongo  --config /data/db/mongod.conf
 
 
