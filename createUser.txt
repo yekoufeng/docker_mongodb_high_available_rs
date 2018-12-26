@@ -1,0 +1,17 @@
+use admin
+db.createUser({ user: 'root', pwd: '123456', roles: [ { role: "root", db: "admin" } ] })
+
+use swordsman
+db.createUser( 
+
+{ 
+
+    user:"swordsman2",  
+
+    pwd:"swordsman123456", 
+
+    roles:[{role:"readWrite",db:"swordsman"}] 
+
+} 
+
+);
