@@ -15,3 +15,23 @@ db.createUser(
 } 
 
 );
+
+use gamemail
+db.createUser( 
+
+{ 
+
+    user:"gamemailoperator",  
+
+    pwd:"HVdkFqdIHq832reBeX0RAlTmJbAUpH", 
+
+    roles:[{role:"readWrite",db:"gamemail"}] 
+
+} 
+
+);
+
+
+
+# 数据库下删除用户
+db.dropUser('swordsman')
