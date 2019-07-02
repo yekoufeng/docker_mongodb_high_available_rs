@@ -1,46 +1,41 @@
-# CentOS-Base.repo
-#
-# The mirror system uses the connecting IP address of the client and the
-# update status of each mirror to pick mirrors that are updated to and
-# geographically close to the client.  You should use this for CentOS updates
-# unless you are manually picking other mirrors.
-#
-# If the mirrorlist= does not work for you, as a fall back you can try the 
-# remarked out baseurl= line instead.
-#
-#
-
+#CentOS-Base.repo
+#The mirror system uses the connecting IP address of the client and the
+#update status of each mirror to pick mirrors that are updated to and
+#geographically close to the client. You should use this for CentOS updates
+#unless you are manually picking other mirrors.
+#If the mirrorlist= does not work for you, as a fall back you can try the
+#remarked out baseurl= line instead.
 [base]
 name=CentOS-7 - Base - aliyun.com
-baseurl=http://mirrors.aliyun.com/centos/7.5.1804/os/$basearch/
+baseurl=http://mirrors.aliyun.com/centos/7.6.1810/os/$basearch/
 gpgcheck=0
 enabled=1
 gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-7
 
 [updates]
 name=CentOS-7 - Updates - aliyun.com
-baseurl=http://mirrors.aliyun.com/centos/7.5.1804/updates/$basearch/
+baseurl=http://mirrors.aliyun.com/centos/7.6.1810/updates/$basearch/
 gpgcheck=0
 enabled=1
 gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-7
 
 [extras]
 name=CentOS-7 - Extras - aliyun.com
-baseurl=http://mirrors.aliyun.com/centos/7.5.1804/extras/$basearch/
+baseurl=http://mirrors.aliyun.com/centos/7.6.1810/extras/$basearch/
 gpgcheck=0
 enabled=1
 gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-7
 
 [centosplus]
 name=CentOS-7 - Plus - aliyun.com
-baseurl=http://mirrors.aliyun.com/centos/7.5.1804/centosplus/$basearch/
+baseurl=http://mirrors.aliyun.com/centos/7.6.1810/centosplus/$basearch/
 gpgcheck=0
 enabled=0
 gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-7
 
 [contrib]
 name=CentOS-7 - Contrib - aliyun.com
-baseurl=http://mirrors.aliyun.com/centos/7.5.1804/contrib/$basearch/
+baseurl=http://mirrors.aliyun.com/centos/7.6.1810/contrib/$basearch/
 gpgcheck=0
 enabled=0
 gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-7
