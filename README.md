@@ -1,3 +1,4 @@
+注：本例部署是在创建的mongodb用户下进行的(/home/mongodb)，你自己的部署应根据你自己部署的实际目录。
 # key生成和预拷贝
 - openssl rand -base64 745 > /home/mongodb/key.file
 - chmod 600 /home/mongodb/key.file
