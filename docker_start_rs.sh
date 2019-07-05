@@ -1,6 +1,3 @@
-docker start mongos0
-docker start mongos1
-docker start mongos2
 docker start configsvr0
 docker start configsvr1
 docker start configsvr2
@@ -13,3 +10,6 @@ docker start shardsvr12
 docker start shardsvr20
 docker start shardsvr21
 docker start shardsvr22
+docker start mongos0
+docker start mongos1
+docker start mongos2
