@@ -1,0 +1,2 @@
+ #docker run -d --name configsvr3  --network mongodb_ov_net -v $PWD/../../data/cs/configsvr0:/data/configdb mongo --configsvr --replSet "rs_configsvr"  --bind_ip_all
+ docker run -d --name configsvr3  --network mongodb_ov_net -v $PWD/../../conf/mongod_config.conf:/data/configdb/mongod.conf -v $PWD/../../key.file:/data/configdb/key.file -v $PWD/../../log/cs/configsvr3/config.log:/data/configdb/log/config.log -v $PWD/../../data/cs/configsvr3:/data/configdb mongo --config /data/configdb/mongod.conf
