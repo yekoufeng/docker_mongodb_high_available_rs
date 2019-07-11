@@ -1,0 +1,1 @@
+mongorestore -h 192.168.133.33:27017 -u root -p 123456 --authenticationDatabase "admin" --noIndexRestore -d gamemail --dir /data/db/gamemail
