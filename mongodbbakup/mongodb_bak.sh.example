@@ -2,13 +2,13 @@
 #backup MongoDB 
   
 #mongodump命令路径 
-DUMP=/usr/local/mongodb/bin/mongodump
+DUMP=/usr/bin/mongodump
 #临时备份目录 
 OUT_DIR=/data/mongodb_bak/mongodb_bak_now
 #备份存放路径 
 TAR_DIR=/data/mongodb_bak/mongodb_bak_list
 #获取当前系统时间 
-DATE=`date +%Y_%m_%d` 
+DATE=`date +%Y_%m_%d_%H:%M` 
 #数据库账号 
 DB_USER=gamemailoperator 
 #数据库密码 
